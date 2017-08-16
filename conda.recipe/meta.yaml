@@ -1,0 +1,21 @@
+package:
+  name: dask_pbs
+  version: "0.1"
+
+source:
+  path: ../
+
+build:
+  script: python setup.py install
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - dask
+    - distributed
+    - paramiko
+
+
